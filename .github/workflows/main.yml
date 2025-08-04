@@ -33,5 +33,5 @@ jobs:
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/nodejs-demo-app .
 
       - name: 🚀 Push Docker image to DockerHub
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/nodejs-demo-app
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/nodejs-demo-app .
 
